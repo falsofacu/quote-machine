@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: transparent;
+  background-color: #11001C;
+}
+
+#background {
+  position: fixed;
+  background-color: transparent;
+  filter: blur(16px);
+  -webkit-filter: blur(16px);
+}
+
+#quote-machine {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  height: auto;
+  width: 700px;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 60px 50px;
+  /*Glass effect BG*/
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#quote{
+  font-family: 'Prompt', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 1.1;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+#author {
+  font-family: 'Prompt', sans-serif;
+  font-weight: normal;
+  text-align: right;
+  font-size: 20px;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+#tweet-quote {
+  position: fixed;
+  top: 82%;
+  color: white;
+  text-decoration: none;
+  font-size: 26px;
+  transform: scale(1);
+  transition: transform 0.2s ease;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+#tweet-quote:hover {
+  transform: scale(1.1);
+}
+
+#next-quote {
+  position: fixed;
+  top: 81%;
+  right: 7%;
+  text-align: right;
+  background-color: rgba(255,255,255,0.3);
+  padding: 5px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-family: 'Prompt', sans-serif;
+  font-size: 15px;
+  transform: scale(1);
+  transition: transform 0.1s ease;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+#next-quote:hover {
+  outline: 1px solid #FFF;
+  transform: scale(1.02);
+}
